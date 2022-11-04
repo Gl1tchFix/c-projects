@@ -2,17 +2,20 @@
 #include <string.h>
 
 int main() {
-    //Vizsgált e-mail cím
-    char email[] = "example@example.com";
-    //E-mail cím hosszúsága
-    int charlength = strlen(email);
+    //Vizsgált e-mail cím változó
+    char email[] = "";
+    //E-mail cím hosszúság változó
+    int charlength;
     //Az e-mailban szereplő @-ok száma
     int atCount = 0;
     //Az e-mail címben szereplő .-ok száma
     int dotCount = 0;
+    //E-mail cím megadása és hosszúság érték hozzárendelése
+    printf("Adja meg az e-mail címet: ");
+    scanf("%49s%n", email, &charlength); 
     
     //E-mail cím karaktereinek vizsgálata
-       for(int i = 0; i < charlength; i++) {  
+     for(int i = 0; i < charlength; i++) {  
         if(email[i] == '@')  
             atCount++; 
         if(email[i] == '.')

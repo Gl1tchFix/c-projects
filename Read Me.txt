@@ -1,0 +1,3 @@
+Minden feladat konzolos egyik sem grafikus.
+Nem tudom hogy kérik ezért bele rakok egy sima és egy input verziót (Input)-ként jelölve.
+Ezeknél hozhat a terminal stack smashing hibát a scanf miatt de le futtatja a kódot.
